@@ -1,0 +1,90 @@
+<html>
+<head></head>
+<body>
+<p>#include&ltstdio.h&gt<br>
+#include&ltconio.h&gt<br>
+
+void main()<br>
+{<br>
+    int ch,a,b;<br>
+    char q;<br>
+
+    clrscr();<br>
+
+    while(1)<br>
+    {<br>
+        printf("\n\n1. Addition");<br>
+        printf("\n2. Subtraction");<br>
+        printf("\n3. Multiplication");<br>
+        printf("\n4. Division");<br>
+        printf("\n5. Modulo");<br>
+        printf("\nQ. Quit");<br>
+
+        printf("\n\nEnter your choice: ");<br>
+        scanf(" %c",&q);<br>
+
+        if(q=='Q' || q=='q')<br>
+        {<br>
+            printf("\nProgram Quit");<br>
+            break;<br>
+        }<br>
+
+        ch=q-'0';<br>
+
+        if(ch>=1 && ch<=5)<br>
+        {<br>
+            printf("\nEnter two numbers: ");<br>
+            scanf("%d%d",&a,&b);<br>
+
+            switch(ch)<br>
+            {<br>
+                case 1:<br>
+                    printf("\nAddition = %d",a+b);<br>
+                    break;<br>
+
+                case 2:<br>
+                    printf("\nSubtraction = %d",a-b);<br>
+                    break;<br>
+
+                case 3:<br>
+                    printf("\nMultiplication = %d",a*b);<br>
+                    break;<br>
+
+                case 4:<br>
+                    if(b!=0)<br>
+                        printf("\nDivision = %d",a/b);<br>
+                    else<br>
+                        printf("\nDivision not possible");<br>
+                    break;<br>
+
+                case 5:<br>
+                    if(b!=0)<br>
+                        printf("\nModulo = %d",a%b);<br>
+                    else<br>
+                        printf("\nModulo not possible");<br>
+                    break;<br>
+            }<br>
+        }<br>
+        else<br>
+        {<br>
+            printf("\nInvalid Choice");<br>
+        }<br>
+    }<br>
+
+    getch();<br>
+}<br>
+<h1>Output</h1>
+<p>1. Addition<br>
+2. Subtraction<br>
+3. Multiplication<br>
+4. Division<br>
+5. Modulo<br>
+Q. Quit<br>
+
+Enter your choice: 1<br>
+
+Enter two numbers: 10 20<br>
+
+Addition = 30</p>
+</body>
+</html>

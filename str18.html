@@ -1,0 +1,53 @@
+<html>
+<head>
+</head>
+<body>
+
+<p>#include&ltstdio.h&gt<br>
+#include&ltconio.h&gt<br>
+
+void main()<br>
+{<br>
+  char str1[100], str2[100];<br>
+    int i, j, len;<br>
+
+    clrscr();<br>
+
+    printf("Enter a string: ");<br>
+    gets(str1);<br>
+
+    len = strlen(str1);<br>
+
+    j = 0;<br>
+
+    for(i=len-1; i>=0; i--)<br>
+    {<br>
+        str2[j] = str1[i];<br>
+        j++;<br>
+    }<br>
+
+    str2[j] = '\0';<br>
+
+    printf("Reverse string = %s\n",str2);<br>
+
+    if(strcmp(str1,str2)==0)<br>
+    {<br>
+        printf("String is Palindrome");<br>
+    }<br>
+    else<br>
+    {<br>
+        printf("String is Not Palindrome");<br>
+    }<br>
+
+
+
+     getch();<br>
+}</p>
+<h1>Output</h1>
+<p>Enter a string: MADAM<br>
+
+Reverse string = MADAM<br>
+
+String is Palindrome</p>
+</body>
+</html>

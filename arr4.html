@@ -1,0 +1,45 @@
+<html>
+<head>
+</head>
+<body>
+<p>#include &ltstdio.h&gt</p>
+
+<p>int main()<br>
+{<br>
+    int a[100], b[100], n, i;<br>
+
+    printf("Enter the size of array: ");<br>
+    scanf("%d", &n);<br>
+
+    printf("Enter %d elements:\n", n);<br>
+
+    
+    for(i = 0; i < n; i++)<br>
+    {<br>
+        scanf("%d", &a[i]);<br>
+    }<br>
+
+  
+    for(i = 0; i < n; i++)<br>
+    {<br>
+        b[i] = a[n - 1 - i];<br>
+    }<br>
+
+  
+    printf("Second array in reverse order:\n");<br>
+
+    for(i = 0; i < n; i++)<br>
+    {<br>
+        printf("%d ", b[i]);<br>
+    }<br>
+
+}</p>
+<h1>Output</h1>
+<p>Enter the size of array: 5<br>
+Enter 5 elements:<br>
+10 20 30 40 50<br>
+
+Second array in reverse order:<br>
+50 40 30 20 10</p>
+</body>
+</html>

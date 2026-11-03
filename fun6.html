@@ -1,0 +1,54 @@
+<html>
+<head></head>
+<body>
+
+<p>#include &ltstdio.h&gt<br>
+
+void swap(int a, int b)<br>
+{<br>
+    int temp;<br>
+
+    temp = a;<br>
+    a = b;<br>
+    b = temp;<br>
+
+    printf("\nInside swap function:");<br>
+    printf("\nA = %d", a);<br>
+    printf("\nB = %d", b);<br>
+}<br>
+
+void main()<br>
+{<br>
+    int x, y;<br>
+
+    printf("Enter two numbers: ");<br>
+    scanf("%d %d", &x, &y);<br>
+
+    printf("\nBefore swapping:");<br>
+    printf("\nX = %d", x);<br>
+    printf("\nY = %d", y);<br>
+
+    swap(x, y);<br>
+
+    printf("\n\nAfter calling function:");<br>
+    printf("\nX = %d", x);<br>
+    printf("\nY = %d", y);<br>
+
+}</p>
+<h1>Output</h1>
+<p>Enter two numbers: 10 20<br>
+
+Before swapping:<br>
+X = 10<br>
+Y = 20<br>
+
+Inside swap function:<br>
+A = 20<br>
+B = 10<br>
+
+After calling function:<br>
+X = 10<br>
+Y = 20</p>
+
+</body>
+</html>

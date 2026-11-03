@@ -1,0 +1,60 @@
+<html>
+<head>
+</head>
+<body>
+
+<p>#include&ltstdio.h&gt<br>
+#include&ltconio.h&gt<br>
+#include&ltstring.h&gt<br>
+
+void main()<br>
+{<br>
+   
+ 
+   char str1[100], str2[100];<br>
+    int i, len1, len2;<br>
+
+    clrscr();<br>
+
+    printf("Enter first string: ");<br>
+    gets(str1);<br>
+
+    printf("Enter second string: ");<br>
+    gets(str2);<br>
+
+    len1 = strlen(str1);<br>
+    len2 = strlen(str2);<br>
+
+    printf("Different characters:\n");<br>
+
+    for(i=0; i<len1 || i<len2; i++)<br>
+    {<br>
+        if(str1[i] != str2[i])<br>
+        {<br>
+            if(i<len1)<br>
+                printf("%c ",str1[i]);<br>
+            else<br>
+                printf("- ");<br>
+
+            if(i<len2)<br>
+                printf("%c",str2[i]);<br>
+
+            printf("\n");<br>
+        }<br>
+    }<br>
+
+
+
+
+
+     getch();<br>
+}</p>
+<h1>Output</h1>
+<p>Enter first string: HELLO<br>
+Enter second string: HALLA<br>
+
+Different characters:<br>
+E A<br>
+O A</p>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<html>
+<head></head>
+<body>
+<p>#include&ltstdio.h&gt<br>
+#include&ltconio.h&gt<br>
+
+void main()<br>
+{<br>
+    int n, r, binary=0, place=1;<br>
+
+    clrscr();<br>
+
+    printf("Enter a number: ");<br>
+    scanf("%d",&n);<br>
+
+    while(n>0)<br>
+    {<br>
+        r=n%2;<br>
+        binary=binary+r*place;<br>
+        n=n/2;<br>
+        place=place*10;<br>
+    }<br>
+
+    printf("Binary number = %d",binary);<br>
+
+    getch();<br>
+}<br>
+<h1>Output</h1>
+<p>Enter a number: 10<br>
+
+Binary number = 1010</p>
+</body>
+</html>

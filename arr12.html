@@ -1,0 +1,36 @@
+<html>
+<head></head>
+<body>
+<p>#include &ltstdio.h&gt<br>
+
+void main()<br>
+{<br>
+    int arr[5], i, max;<br>
+
+    printf("Enter 5 elements:\n");<br>
+
+    for(i = 0; i < 5; i++)<br>
+    {<br>
+        scanf("%d", &arr[i]);<br>
+    }<br>
+
+    max = arr[0];<br>
+
+    for(i = 1; i < 5; i++)<br>
+    {<br>
+        if(arr[i] > max)<br>
+        {<br>
+            max = arr[i];<br>
+        }<br>
+    }<br>
+
+    printf("Maximum value = %d", max);<br>
+
+}</p>
+<h1>Output</h1>
+<p>Enter 5 elements:<br>
+10 50 30 80 20<br>
+
+Maximum value = 80</p>
+</body>
+</html>

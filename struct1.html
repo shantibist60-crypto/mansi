@@ -1,0 +1,265 @@
+<html>
+<head>
+</head>
+<body>
+
+<p>#include &ltstdio.h&gt<br>
+#include &ltconio.h&gt<br>
+
+struct employee<br>
+{<br>
+    int id;<br>
+    char name[30];<br>
+    char designation[30];<br>
+};<br>
+
+void main()<br>
+{<br>
+    struct employee e[50];<br>
+    int i;<br>
+
+    clrscr();<br>
+
+    // Input employee details<br>
+    for(i = 0; i < 50; i++)<br>
+    {<br>
+        printf("\nEnter details of employee %d", i+1);<br>
+
+        printf("\nEnter Employee ID: ");<br>
+        scanf("%d", &e[i].id);<br>
+
+        printf("Enter Employee Name: ");<br>
+        scanf("%s", e[i].name);<br>
+
+        printf("Enter Designation: ");<br>
+        scanf("%s", e[i].designation);<br>
+    }<br>
+
+    // Display employee details<br>
+    printf("\n\nEMPLOYEE DETAILS");<br>
+    printf("\n-----------------------------------------------");<br>
+    printf("\nID\tNAME\t\tDESIGNATION");<br>
+    printf("\n-----------------------------------------------");<br>
+
+    for(i = 0; i < 50; i++)<br>
+    {<br>
+        printf("\n%d\t%s\t\t%s",<br>
+        e[i].id, e[i].name, e[i].designation);<br>
+    }<br>
+
+    getch();<br>
+}<br>
+<h1>Output</h1>
+<p>EMPLOYEE DETAILS<br>
+-----------------------------------------------<br>
+ID      NAME            DESIGNATION<br>
+-----------------------------------------------<br>
+101     Rahul           Manager<br>
+102     Aman            Clerk<br>
+103     Priya           Accountant</p>
+
+<br><hr><p id="struct2">#include &ltstdio.h&gt<br>
+#include &ltconio.h&gt<br>
+
+struct employee<br>
+{<br>
+    int id;<br>
+    char name[30];<br>
+    char designation[30];<br>
+};<br>
+
+void main()<br>
+{<br>
+    struct employee e[50];<br>
+    int i;<br>
+
+    clrscr();<br>
+
+    // Input employee details<br>
+    for(i = 0; i < 50; i++)<br>
+    {<br>
+        printf("\nEnter details of employee %d", i+1);<br>
+
+        printf("\nEnter Employee ID: ");<br>
+        scanf("%d", &e[i].id);<br>
+
+        printf("Enter Employee Name: ");<br>
+        scanf("%s", e[i].name);<br>
+
+        printf("Enter Designation: ");<br>
+        scanf("%s", e[i].designation);<br>
+    }<br>
+
+     printf("\nNames of all employees:\n");<br>
+
+    for(i=0; i<50; i++)<br>
+    {<br>
+        printf("\n%s",e[i].name);<br>
+    }<br>
+
+    getch();<br>
+}<br>
+<h1>Output</h1>
+<p>Enter details of employee 1<br>
+Enter ID: 101<br>
+Enter Name: Rahul<br>
+Enter Designation: Manager<br><br>
+
+Enter details of employee 2<br>
+Enter ID: 102<br>
+Enter Name: Aman<br>
+Enter Designation: Clerk<br>
+
+Names of all employees:<br>
+
+Rahul<br>
+Aman</p><hr>
+<br><br>
+<hr>
+<p id="struct3">#include &ltstdio.h&gt<br>
+#include &ltconio.h&gt<br>
+
+struct employee<br>
+{<br>
+    int id;<br>
+    char name[30];<br>
+    char designation[30];<br>
+};<br>
+
+void main()<br>
+{<br>
+    struct employee e[50];<br>
+    int i;<br>
+
+    clrscr();<br>
+
+    // Input employee details<br>
+    for(i = 0; i < 50; i++)<br>
+    {<br>
+        printf("\nEnter details of employee %d", i+1);<br>
+
+        printf("\nEnter Employee ID: ");<br>
+        scanf("%d", &e[i].id);<br>
+
+        printf("Enter Employee Name: ");<br>
+        scanf("%s", e[i].name);<br>
+
+        printf("Enter Designation: ");<br>
+        scanf("%s", e[i].designation);<br>
+    }<br>
+
+     printf("\n\n--------------------------------");<br>
+    printf("\nEMPLOYEE ID\tEMPLOYEE NAME");<br>
+    printf("\n--------------------------------");<br>
+
+    for(i=0; i<50; i++)<br>
+    {<br>
+        printf("\n%d\t\t%s",e[i].id,e[i].name);<br>
+    }<br>
+
+    getch();<br>
+}<br>
+<h1>Output</h1>
+<p>--------------------------------<br>
+EMPLOYEE ID     EMPLOYEE NAME<br>
+--------------------------------<br>
+101             Rahul<br>
+102             Aman<br>
+103             Priya<br>
+104             Simran<br>
+105             Karan<br>
+--------------------------------</p>
+<br><br>
+<hr>
+<p id="struct4">#include &ltstdio.h&gt<br>
+#include &ltconio.h&gt<br>
+
+struct student<br>
+{<br>
+    int roll;<br>
+    char name[30];<br>
+    float fee;<br>
+    char dob[15];<br>
+};<br>
+
+void main()<br>
+{<br>
+    struct student s[50], temp;<br>
+    int i, j, n;<br>
+
+    clrscr();<br>
+
+    printf("Enter number of students: ");<br>
+    scanf("%d",&n);<br>
+
+    for(i=0; i<n; i++)<br>
+    {<br>
+        printf("\nEnter details of student %d",i+1);<br>
+
+        printf("\nEnter Roll Number: ");<br>
+        scanf("%d",&s[i].roll);<br>
+
+        printf("Enter Name: ");<br>
+        scanf("%s",s[i].name);<br>
+
+        printf("Enter Fee: ");<br>
+        scanf("%f",&s[i].fee);<br>
+
+        printf("Enter DOB (DD-MM-YYYY): ");<br>
+        scanf("%s",s[i].dob);<br>
+    }<br>
+
+    /* Sorting in ascending order */<br>
+
+    for(i=0; i<n-1; i++)<br>
+    {<br>
+        for(j=0; j<n-i-1; j++)<br>
+        {<br>
+            if(s[j].roll > s[j+1].roll)<br>
+            {<br>
+                temp = s[j];<br>
+                s[j] = s[j+1];<br>
+                s[j+1] = temp;<br>
+            }<br>
+        }<br>
+    }<br>
+
+    printf("\n\nSTUDENT DETAILS IN ASCENDING ORDER");<br>
+
+   
+    printf("\nROLL\tNAME\tFEE\tDOB");<br>
+   
+
+    for(i=0; i<n; i++)<br>
+    {<br>
+        printf("\n%d\t%s\t%.2f\t%s",<br>
+        s[i].roll, s[i].name, s[i].fee, s[i].dob);<br>
+    }<br>
+
+    getch();<br>
+}<br>
+<h1>Output</h1>
+<p>Enter number of students: 3<br>
+
+Enter details of student 1<br>
+Enter Roll Number: 103<br>
+Enter Name: Rahul<br>
+Enter Fee: 15000<br>
+Enter DOB: 12-05-2007<br>
+
+Enter details of student 2<br>
+Enter Roll Number: 101<br>
+Enter Name: Aman<br>
+Enter Fee: 12000<br>
+Enter DOB: 15-08-2006<br>
+
+Enter details of student 3<br>
+Enter Roll Number: 102<br>
+Enter Name: Priya<br>
+Enter Fee: 14000<br>
+Enter DOB: 20-03-2007</p>
+
+
+
+</body>
+</html>

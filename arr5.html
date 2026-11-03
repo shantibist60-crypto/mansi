@@ -1,0 +1,42 @@
+<html>
+<head></head>
+<body>
+
+<p>#include &thstdio.&gt<br>
+
+void main()<br>
+{<br>
+    int a[100], n, i;<br>
+
+    printf("Enter the size of array: ");<br>
+    scanf("%d", &n);<br>
+
+    printf("Enter %d elements:\n", n);<br>
+
+ 
+    for(i = 0; i < n; i++)<br>
+    {<br>
+        scanf("%d", &a[i]);<br>
+    }<br>
+
+ 
+    printf("Even numbers are:\n");<br>
+
+    for(i = 0; i < n; i++)<br>
+    {<br>
+        if(a[i] % 2 == 0)<br>
+        {<br>
+            printf("%d ", a[i]);<br>
+        }<br>
+    }<br>
+
+}</p>
+<h1>Output</h1>
+<p>Enter the size of array: 6<br>
+Enter 6 elements:<br>
+10 15 20 25 30 35<br>
+
+Even numbers are:<br>
+10 20 30</p>
+</body>
+</html>

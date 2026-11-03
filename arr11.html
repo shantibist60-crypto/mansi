@@ -1,0 +1,45 @@
+<html>
+<head></head>
+<body>
+<p>#include &ltstdio.h&gt<br>
+
+void main()<br>
+{<br>
+        int arr[5], i, j, temp;<br>
+
+    printf("Enter 5 elements:\n");<br>
+
+    for(i = 0; i < 5; i++)<br>
+    {<br>
+        scanf("%d", &arr[i]);<br>
+    }<br>
+
+   
+    for(i = 0; i < 5; i++)<br>
+    {<br>
+        for(j = i + 1; j < 5; j++)<br>
+        {<br>
+            if(arr[i] > arr[j])<br>
+            {<br>
+                temp = arr[i];<br>
+                arr[i] = arr[j];<br>
+                arr[j] = temp;<br>
+            }<br>
+        }< br>
+    }<br>
+
+    printf("Array in ascending order:\n");<br>
+
+    for(i = 0; i < 5; i++)<br>
+    {<br>
+        printf("%d ", arr[i]);<br>
+    }<br>
+}</p>
+<h1>Output</h1>
+<p>Enter 5 elements:<br>
+50 20 40 10 30<br>
+
+Array in ascending order:<br>
+10 20 30 40 50</p>
+</body>
+</html>

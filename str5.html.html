@@ -1,0 +1,40 @@
+<html>
+<head></head>
+<body>
+<p>#include&ltstdio.h&gt<br>
+#include&ltconio.h&gt<br>
+
+void main()<br>
+int i<br>
+{<br>
+    char str[100];<br>
+
+    clrscr();<br>
+
+   printf("Enter a string: ");<br>
+    gets(str);<br>
+
+    
+    for(i=0; str[i]!='\0'; i++)<br>
+    {<br>
+        if(str[i]>='A' && str[i]<='Z')<br>
+        {<br>
+            str[i] = str[i] + 32;<br>
+        }<br>
+        else if(str[i]>='a' && str[i]<='z')<br>
+        {<br>
+            str[i] = str[i] - 32;<br>
+        }<br>
+    }<br>
+
+    printf("Toggle case string: %s", str);<br>
+
+        getch();<br>
+}</p>
+
+
+<h1>Output</h1>
+<p>Enter a string: Hello World<br>
+sentence case:hELLO wORLD</p>
+</body>
+</html>

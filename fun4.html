@@ -1,0 +1,183 @@
+<html>
+<head></head>
+<body>
+<h1>1. Factorial using Local and Global Variables</h1>
+
+<p>#include &ltstdio.h&gt<br>
+
+int fact = 1;   // Global variable<br>
+
+void main()<br>
+{<br>
+    int n, i;   // Local variables<br>
+
+    printf("Enter a number: ");<br>
+    scanf("%d", &n);<br>
+
+    for(i = 1; i <= n; i++)<br>
+    {<br>
+        fact = fact * i;<br>
+    }<br>
+
+    printf("Factorial = %d", fact);<br>
+
+}</p>
+<h1>Output</h1>
+<p>Enter a number: 5<br>
+Factorial = 120</p>
+<br><br><br>
+<h1>2. Reverse a Number using Local and Global Variables</h1>
+<p>#include &ltstdio.h&gt<br>
+
+int rev = 0;   // Global variable<br>
+
+void main()<br>
+{<br>
+    int n, rem;   // Local variables<br>
+
+    printf("Enter a number: ");<br>
+    scanf("%d", &n);<br>
+
+    while(n != 0)<br>
+    {<br>
+        rem = n % 10;<br>
+        rev = rev * 10 + rem;<br>
+        n = n / 10;<br>
+    }<br>
+
+    printf("Reverse = %d", rev);<br>
+
+}</p>
+<h1>Output</h1>
+<p>Enter a number: 1234<br>
+Reverse = 4321</p>
+<br><br><br>
+
+
+<h1>3. Palindrome Number using Local and Global Variables</h1>
+<p>#include &ltstdio.h&gt<br>
+
+int rev = 0;   // Global variable<br>
+
+void main()<br>
+{<br>
+    int n, temp, rem;   // Local variables<br>
+
+    printf("Enter a number: ");<br>
+    scanf("%d", &n);<br>
+
+    temp = n;<br>
+
+    while(n != 0)<br>
+    {
+        rem = n % 10;<br>
+        rev = rev * 10 + rem;<br>
+        n = n / 10;<br>
+    }<br>
+
+    if(temp == rev)<br>
+        printf("Palindrome Number");<br>
+    else<br>
+        printf("Not a Palindrome Number");<br>
+
+ 
+}</p>
+<h1>Output</h1>
+<p>Enter a number: 121<br>
+Palindrome Number</p>
+<br><br><br>
+<h1>4. Prime Number using Local and Global Variables</h1>
+<p>
+<p>#include &ltstdio.h&gt<br>
+
+int count = 0;   // Global variable<br>
+
+void main()<br>
+{<br>
+    int n, i;   // Local variables<br>
+
+    printf("Enter a number: ");<br>
+    scanf("%d", &n);<br>
+
+    for(i = 1; i <= n; i++)<br>
+    {<br>
+        if(n % i == 0)<br>
+        {<br>
+            count++;<br>
+        }<br>
+    }<br>
+
+    if(count == 2)<br>
+        printf("Prime Number");<br>
+    else<br>
+        printf("Not a Prime Number");<br>
+
+
+}</p>
+<h1>Output</h1>
+<p>Enter a number: 7<br>
+Prime Number</p>
+<br><br><br>
+5. Armstrong Number using Local and Global Variables
+<p>#include &ltstdio.h&gt<br>
+
+int sum = 0;   // Global variable<br>
+
+void main()<br>
+{<br>
+    int n, temp, rem;   // Local variables<br>
+
+    printf("Enter a number: ");<br>
+    scanf("%d", &n);<br>
+
+    temp = n;<br>
+
+    while(n != 0)<br>
+    {<br>
+        rem = n % 10;<br>
+        sum = sum + (rem * rem * rem);<br>
+        n = n / 10;<br>
+    }<br>
+
+    if(temp == sum)<br>
+        printf("Armstrong Number");<br>
+    else<br>
+        printf("Not an Armstrong Number");<br>
+}</p>
+<h1>Output</h1>
+<p>Enter a number: 153<br>
+Armstrong Number</p>
+<br><br><br>
+<h1>6. Fibonacci Series using Local and Global Variables</h1>
+<p>#include &ltstdio.h&gt<br>
+
+int a = 0, b = 1;   // Global variables<br>
+
+void main()<br>
+{<br>
+
+    int n, i, c;   // Local variables<br>
+
+    printf("Enter number of terms: ");<br>
+    scanf("%d", &n);<br>
+
+    printf("Fibonacci Series: ");<br>
+
+    for(i = 1; i <= n; i++)<br>
+    {<br>
+        printf("%d ", a);<br>
+
+        c = a + b;<br>
+        a = b;<br>
+        b = c;<br>
+    }<br>
+
+
+}</p>
+<h1>Output</h1>
+<p>Enter number of terms: 7<br>
+Fibonacci Series: 0 1 1 2 3 5 8</p>
+
+
+</body>
+</html>

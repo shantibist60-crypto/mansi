@@ -1,0 +1,44 @@
+<html>
+<head>
+</head>
+<body>
+
+<p>#include&ltstdio.h&gt<br>
+#include&ltconio.h&gt<br>
+#include&ltstring.h&gt<br>
+
+void main()<br>
+{<br>
+   
+ 
+   char str[100];<br>
+    int n, len;<br>
+
+    clrscr();<br>
+
+    printf("Enter a string: ");<br>
+    gets(str);<br>
+
+    printf("Enter a number: ");<br>
+    scanf("%d",&n);<br>
+
+    len = strlen(str);<br>
+
+    if(n>=0 && n<len)<br>
+    {<br>
+        printf("Character = %c",str[n]);<br>
+    }<br>
+    else<br>
+    {<br>
+        printf("Out of Bound");<br>
+    }<br>
+
+     getch();<br>
+}</p>
+<h1>Output</h1>
+<p>Enter a string: HELLO<br>
+Enter a number: 2<br>
+
+Character = L</p>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<html>
+<head></head>
+<body>
+<p>#include&ltstdio.h&gt<br>
+#include&ltconio.h&gt<br>
+#include&ltstring.h&gt<br>
+
+void main()<br>
+{<br>
+    char str[100];<br>
+
+    clrscr();<br>
+
+   printf("Enter a string: ");<br>
+    gets(str);<br>
+
+    strlwr(str);<br>
+
+    str[0] = toupper(str[0]);<br>
+
+    printf("Sentence Case: %s", str);<br>
+
+    getch();<br>
+}</p>
+
+
+<h1>Output</h1>
+<p>Enter a string: hELLO wORLD<br>
+sentence case:Hello World
+</p>
+</body>
+</html>

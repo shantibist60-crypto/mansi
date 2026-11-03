@@ -1,0 +1,41 @@
+<html>
+<head></head>
+<body>
+<p>#include&ltstdio.h&gt<br>
+#include&ltconio.h&gt<br>
+
+void main()<br>
+{<br>
+char pass[21];<br>
+    int i=0;<br>
+    char ch;<br>
+
+    clrscr();<br>
+
+    printf("Enter Password: ");<br>
+
+    while(i<20)<br>
+    {<br>
+        ch=getch();<br>
+
+        if(ch==13)<br>
+        {<br>
+            break;<br>
+        }<br>
+
+        pass[i]=ch;<br>
+        printf("*");<br>
+        i++;<br>
+    }<br>
+
+    pass[i]='\0';<br>
+
+    printf("\n\nPassword entered successfully.");<br>
+    getch();<br>
+}<br>
+<h1>Output</h1>
+<p>Enter Password: ********<br>
+
+Password entered successfully.</p>
+</body>
+</html>

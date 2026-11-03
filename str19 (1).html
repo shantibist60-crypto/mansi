@@ -1,0 +1,83 @@
+<html>
+<head>
+</head>
+<body>
+
+<p>#include&ltstdio.h&gt<br>
+#include&ltconio.h&gt<br>
+ 
+  struct student<br>
+{<br>
+    int rollno;<br>
+    char name[50];<br>
+    char class[20];<br>
+    int marks[5];<br>
+};<br>
+
+void main()<br>
+{<br>
+    struct student s;<br>
+    int i;<br>
+
+    clrscr();<br>
+
+    printf("Enter Roll Number: ");<br>
+    scanf("%d",&s.rollno);<br>
+
+    printf("Enter Name: ");<br>
+    scanf("%s",s.name);<br>
+
+    printf("Enter Class: ");<br>
+    scanf("%s",s.class);<br>
+
+    printf("\nEnter marks of 5 subjects:\n");<br>
+
+    for(i=0; i<5; i++)<br>
+    {<br>
+        printf("Subject %d: ",i+1);<br>
+        scanf("%d",&s.marks[i]);<br>
+    }<br>
+
+    printf("\n----- Student Information -----\n");<br>
+
+    printf("Roll Number: %d\n",s.rollno);<br>
+    printf("Name: %s\n",s.name);<br>
+    printf("Class: %s\n",s.class);<br>
+
+    printf("\nMarks:\n");<br>
+
+    for(i=0; i<5; i++)<br>
+    {<br>
+        printf("Subject %d: %d\n",i+1,s.marks[i]);<br>
+    }<br>
+
+
+
+     getch();<br>
+}</p>
+<h1>Output</h1>
+<p>Enter Roll Number: 101<br>
+Enter Name: Rahul<br>
+Enter Class: BCA<br>
+
+Enter marks of 5 subjects:<br>
+Subject 1: 80<br>
+Subject 2: 75<br>
+Subject 3: 90<br>
+Subject 4: 85<br>
+Subject 5: 88<br>
+
+----- Student Information -----<br>
+
+Roll Number: 101<br>
+Name: Rahul<br>
+Class: BCA<br>
+
+Marks:<br>
+Subject 1: 80<br>
+Subject 2: 75<br>
+Subject 3: 90<br>
+Subject 4: 85<br>
+Subject 5: 88</p>
+</body>
+</html>

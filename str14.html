@@ -1,0 +1,48 @@
+<html>
+<head>
+</head>
+<body>
+
+<p>#include&ltstdio.h&gt<br>
+#include&ltconio.h&gt<br>
+
+void main()<br>
+{<br>
+   char str[100], ch;<br>
+    int i, found=0;<br>
+
+    clrscr();<br>
+
+    printf("Enter a string: ");<br>
+    gets(str);<br>
+
+    printf("Enter a character: ");<br>
+    scanf("%c",&ch);<br>
+
+    for(i=0; str[i]!='\0'; i++)<br>
+    {<br>
+        if(str[i]==ch)<br>
+        {<br>
+            found=1;<br>
+            break;<br>
+        }<br>
+    }<br>
+
+    if(found==1)<br>
+    {<br>
+        printf("Character exists in the string");<br>
+    }<br>
+    else<br>
+    {<br>
+        printf("Character does not exist in the string");<br>
+    }<br>
+
+     getch();<br>
+}</p>
+<h1>Output</h1>
+<p>Enter a string: HELLO<br>
+Enter a character: L<br>
+
+Character exists in the string</p>
+</body>
+</html>

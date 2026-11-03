@@ -1,0 +1,42 @@
+<html>
+<head></head>
+<body>
+<p>#include&ltstdio.h&gt<br>
+#include&ltconio.h&gt<br>
+
+void main()<br>
+{<br>
+ int a,b,i;<br>
+
+    clrscr();<br>
+
+    printf("Enter first number: ");<br>
+    scanf("%d",&a);<br>
+
+    printf("Enter second number: ");<br>
+    scanf("%d",&b);<br>
+
+    if(a<=b)<br>
+    {<br>
+        for(i=a;i<=b;i++)<br>
+        {<br>
+            printf("%d ",i);<br>
+        }<br>
+    }<br>
+    else<br>
+    {<br>
+        for(i=a;i>=b;i--)<br>
+        {<br>
+            printf("%d ",i);<br>
+        }<br>
+    }<br>
+<br>
+    getch();<br>
+}<br>
+<h1>Output</h1>
+<p>Enter first number: 5<br>
+Enter second number: 10<br>
+
+5 6 7 8 9 10</p>
+</body>
+</html>

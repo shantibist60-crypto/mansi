@@ -1,0 +1,60 @@
+<html>
+<head></head>
+<body>
+<p>#include&ltstdio.h&gt<br>
+#include&ltconio.h&gt<br>
+
+void main()<br>
+{<br>
+    int a[2][2], i, j;<br>
+
+    clrscr();<br>
+
+    printf("Enter four numbers:\n");<br>
+
+    for(i=0; i<2; i++)<br>
+    {<br>
+        for(j=0; j<2; j++)<br>
+        {<br>
+            scanf("%d", &a[i][j]);<br>
+        }<br>
+    }<br>
+
+    printf("\nOriginal Matrix:\n");<br>
+
+    for(i=0; i<2; i++)<br>
+    {<br>
+        for(j=0; j<2; j++)<br>
+        {<br>
+            printf("%d\t", a[i][j]);<br>
+        }<br>
+        printf("\n");<br>
+    }<br>
+
+    printf("\nTranspose Matrix:\n");<br>
+
+    for(i=0; i<2; i++)<br>
+    {<br>
+        for(j=0; j<2; j++)<br>
+        {<br>
+            printf("%d\t", a[j][i]);<br>
+        }<br>
+        printf("\n");<br>
+    }<br>
+
+    getch();<br>
+}</p>
+<h1>Output</h1>
+<p>Enter 4 elements:<br>
+1  2<br>
+3  4<br>
+
+Original Matrix:<br>
+1  2<br>
+3  4<br>
+
+Transpose Matrix:<br>
+1  3<br>
+2  4</p>
+</body>
+</html>

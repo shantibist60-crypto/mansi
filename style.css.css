@@ -1,0 +1,17 @@
+/*css stylesheet for c web*/
+h1{
+	font-family:san-serif;
+	font-size:30px;
+	color:black;
+}
+h2{
+	font-family:san-serif;
+	font-size:20px;
+	font-color:black;
+}
+body{
+	font-family:sen-serif;
+	font-size:16px;
+	padding:16px 0px;
+}
+	

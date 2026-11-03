@@ -1,0 +1,77 @@
+<html>
+<head></head>
+<body>
+<p>#include&ltstdio.h&gt<br>
+#include&ltconio.h&gt<br>
+
+void main()<br>
+{<br>
+    int a[2][2], b[2][2], c[2][2];<br>
+    int i, j;<br>
+
+    clrscr();<br>
+
+    printf("Enter first matrix:\n");<br>
+
+    for(i=0; i<2; i++)<br>
+    {<br>
+        for(j=0; j<2; j++)<br>
+        {<br>
+            scanf("%d", &a[i][j]);<br>
+        }<br>
+    }<br>
+
+    printf("Enter second matrix:\n");<br>
+
+    for(i=0; i<2; i++)<br>
+    {<br>
+        for(j=0; j<2; j++)<br>
+        {<br>
+            scanf("%d", &b[i][j]);<br>
+        }<br>
+    }<br>
+
+  // Multiplication of matrices<br>
+
+    for(i=0; i<2; i++)<br>
+    {<br>
+        for(j=0; j<2; j++)<br>
+        {<br>
+            c[i][j] = 0;<br>
+
+            for(k=0; k<2; k++)<br>
+            {<br>
+                c[i][j] = c[i][j] + a[i][k] * b[k][j];<br>
+            }<br>
+        }<br>
+    }<br>
+
+    printf("\nMultiplication of two matrices:\n");<br>
+
+    for(i=0; i<2; i++)<br>
+    {<br>
+        for(j=0; j<2; j++)<br>
+        {<br>
+            printf("%d\t", c[i][j]);<br>
+        }<br>
+        printf("\n");<br>
+    }<br>
+
+
+    getch();<br>
+}<br>
+<h1>Output</h1>
+<p>Enter first matrix:<br>
+1 2<br>
+3 4<br>
+
+Enter second matrix:<br>
+5 6<br>
+7 8<br>
+
+Multiplication of two matrices:<br>
+
+19  22<br>
+43  50</p>
+</body>
+</html>

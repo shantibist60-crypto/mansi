@@ -1,0 +1,46 @@
+<html>
+<head></head>
+<body>
+<p>#include &ltstdio.h&gt<br>
+
+void main()<br>
+{<br>
+    int arr[5], i, num, found = 0;<br>
+
+    printf("Enter 5 elements:\n");<br>
+
+    for(i = 0; i < 5; i++)<br>
+    {<br>
+        scanf("%d", &arr[i]);<br>
+    }<br>
+
+    printf("Enter value to search: ");<br>
+    scanf("%d", &num);<br>
+
+    for(i = 0; i < 5; i++)<br>
+    {<br>
+        if(arr[i] == num)<br>
+        {<br>
+            found = 1;<br>
+            break;<br>
+        }<br>
+    }<br>
+
+    if(found == 1)<br>
+    {<br>
+        printf("Found");<br>
+    }<br>
+    else<br>
+    {<br>
+        printf("Not Found");<br>
+    }<br>    
+}</p>
+<h1>Output</h1>
+<p>Enter 5 elements:<br>
+10 20 30 40 50<br>
+
+Enter value to search: 30<br>
+
+Found</p>
+</body>
+</html>

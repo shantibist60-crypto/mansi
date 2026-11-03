@@ -1,0 +1,244 @@
+From: <Saved by Blink>
+Snapshot-Content-Location: file:///C:/Users/Hp/Desktop/fxn.html
+Subject: 
+Date: Tue, 03 Nov 2026 03:28:35 GMT
+MIME-Version: 1.0
+Content-Type: multipart/related;
+	type="text/html";
+	boundary="----MultipartBoundary--Wmpb9gNq9Pv5ISLfv99yJ5iUfPyNKOYiiwVxqRFCNI----"
+
+
+------MultipartBoundary--Wmpb9gNq9Pv5ISLfv99yJ5iUfPyNKOYiiwVxqRFCNI----
+Content-Type: text/html
+Content-ID: <frame-B916EF0025D6845AD95A48F9E43C570D@mhtml.blink>
+Content-Transfer-Encoding: quoted-printable
+Content-Location: file:///C:/Users/Hp/Desktop/fxn.html
+
+<html><head><meta http-equiv=3D"Content-Type" content=3D"text/html; charset=
+=3Dwindows-1252">
+<link rel=3D"stylesheet" href=3D"file:///C:/Users/Hp/Desktop/style.css">
+</head>
+
+<body style=3D"background-color:#0B1021;">
+<h1><b><u>FUNCTIONS</u></b></h1>
+<h2>Q1
+Write a program to enter 2 number from the users add them and display the a=
+nswer, again enter 2 number from the user subtract them and display the ans=
+wer, again enter 2 number from the user add them and display the answer, ag=
+ain enter 2 number from the user multiply them and display the answer, agai=
+n enter 2 number from the user subtract them and display the answer, again =
+enter 2 number from the user multiply them and display the answer, again en=
+ter 2 number from the user divide them and display the answer, again enter =
+2 number from the user divide them and display the answer, again enter 2 nu=
+mber from the user add them and display the answer ?</h2>
+<h3>Answer:
+void add(float x,float y)
+{
+printf("sum=3D%f",x+y);
+}
+void sub(float x,float y)
+{
+printf("difference=3D%f",x-y);
+}
+void mul(float x,float y)
+{
+printf("multiply=3D%f",x*y);
+}
+void div(float x,float y)
+{
+printf("division=3D%f",x/y);
+}
+void main()
+{
+float num1,num2;
+printf("Enter first number ");
+scanf("%f",&amp;num1);
+printf("Enter first number ");
+scanf("%f",&amp;num2);
+add(num1,num2);
+printf("\nEnter first number ");
+scanf("%f",&amp;num1);
+printf("Enter first number ");
+scanf("%f",&amp;num2);
+sub(num1,num2);
+printf("\nEnter first number ");
+scanf("%f",&amp;num1);
+printf("Enter first number ");
+scanf("%f",&amp;num2);
+add(num1,num2);
+printf("\nEnter first number ");
+scanf("%f",&amp;num1);
+printf("Enter first number ");
+scanf("%f",&amp;num2);
+mul(num1,num2);
+printf("\nEnter first number ");
+scanf("%f",&amp;num1);
+printf("Enter first number ");
+scanf("%f",&amp;num2);
+sub(num1,num2);
+printf("\nEnter first number ");
+scanf("%f",&amp;num1);
+printf("Enter first number ");
+scanf("%f",&amp;num2);
+mul(num1,num2);
+printf("\nEnter first number ");
+scanf("%f",&amp;num1);
+printf("Enter first number ");
+scanf("%f",&amp;num2);
+div(num1,num2);
+printf("\nEnter first number ");
+scanf("%f",&amp;num1);
+printf("Enter first number ");
+scanf("%f",&amp;num2);
+div(num1,num2);
+printf("\nEnter first number ");
+scanf("%f",&amp;num1);
+printf("Enter first number ");
+scanf("%f",&amp;num2);
+add(num1,num2);
+}</h3><h4>Output
+Enter first number 54
+Enter first number 6
+sum=3D60.000000
+Enter first number 45
+Enter first number 60
+difference=3D-15.000000
+Enter first number 23
+Enter first number 43
+sum=3D66.000000
+Enter first number 78
+Enter first number 2
+multiply=3D156.000000
+Enter first number 12
+Enter first number 65
+difference=3D-53.000000
+Enter first number 34
+Enter first number 2
+multiply=3D68.000000
+Enter first number 23
+Enter first number 23
+division=3D1.000000
+Enter first number 45
+Enter first number 15
+division=3D3.000000
+Enter first number 12
+Enter first number 78
+sum=3D90.000000</h4><br><br><br><br>
+<h2>Q2
+Write a program to enter 10 number from the user add the number and display=
+ the answer ?</h2>
+<h3>Answer:
+int sum=3D0;
+void add(int x)
+{
+sum=3Dsum+x;
+}
+void main()
+{
+int i,num;
+for(i=3D0;i&lt;10;i++)
+{
+printf("Enter number ");
+scanf("%d",&amp;num);
+add(num);
+}
+printf("sum=3D%d",sum);
+}</h3><h4>Output
+Enter number 54
+Enter number 12
+Enter number 76
+Enter number 32
+Enter number 7
+Enter number 12
+Enter number 43
+Enter number 66
+Enter number 6
+Enter number 3
+sum=3D311</h4><br><br><br><br><br>
+<h2>Q3
+Write a program to return an array from function?</h2>
+<h3></h3><br><br><br><br><br>
+<h2>Q4
+Making following program using local and global variable ?
+Factorial , Reverse , Palindrome , Prime numbers, Armstrong , Fibonacci</h2=
+><br><br><br><br><br>
+<h2>Q5
+Swap numbers using Call by address?</h2>
+<h3>Answer:
+void swap(int *x,int *y)
+{
+int i;
+i=3D*x;
+*x=3D*y;
+*y=3Di;
+printf("%d ",*x);
+printf("%d",*y);
+}
+void main()
+{
+int num1,num2;
+printf("Enter number one ");
+scanf("%d",&amp;num1);
+printf("Enter number two ");
+scanf("%d",&amp;num2);
+swap(&amp;num1,&amp;num2);
+}</h3><h4>Output
+Enter number one 6
+Enter number two 87
+87 6</h4><br><br><br><br><br>
+<h2>Q6
+Swap numbers using Call by function?</h2><br><br><br><br><br>
+<h2>Q7
+Make function for find out power of number, enter the number and power from=
+ user ?</h2>
+<h3>void pows(int x,int y)
+{
+int i,num3=3Dx;
+for(i=3D1;i<y;i++) {=3D"" num3=3D"num3*x;" }=3D"" printf("%d",num3);=3D"" v=
+oid=3D"" main()=3D"" int=3D"" num1,num2;=3D"" printf("enter=3D"" number=3D"=
+" ");=3D"" scanf("%d",&num1);=3D"" power=3D"" scanf("%d",&num2);=3D"" pows(=
+num1,num2);=3D"" }<=3D"" h3=3D""><h4>Output
+Enter number 6
+Enter power 3
+216</h4><br><br><br><br><br>
+<h2>Q8
+Make function for find out Cube a user entered number ?</h2>
+<h3>Answer:
+void cube(int x)
+{
+printf("cube of the number %d",x*x*x);
+}
+void main()
+{
+int num;
+scanf("%d",&amp;num);
+cube(num);
+}</h3><h4>Output
+5
+cube of the number 125</h4>
+
+</y;i++)></h3></body></html>
+------MultipartBoundary--Wmpb9gNq9Pv5ISLfv99yJ5iUfPyNKOYiiwVxqRFCNI----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: file:///C:/Users/Hp/Desktop/style.css
+
+@charset "windows-1252";
+
+h3 { background-color: white; white-space: pre-wrap; margin: 0px; padding-b=
+ottom: 0px; font-size: 18px; }
+
+p { white-space: pre-wrap; background-color: rgb(216, 191, 216); }
+
+h1 { font-size: 50px; text-align: center; color: white; }
+
+h2 { background-color: rgb(223, 197, 254); white-space: pre-wrap; font-size=
+: 20px; margin: 0px; padding-bottom: 0px; }
+
+a { color: teal; }
+
+h4 { background-color: rgb(223, 197, 254); padding-top: 0px; margin: 0px; w=
+hite-space: pre-wrap; font-size: 16px; }
+
+h6 { background-color: white; font-size: 40px; }
+------MultipartBoundary--Wmpb9gNq9Pv5ISLfv99yJ5iUfPyNKOYiiwVxqRFCNI------
